@@ -11,6 +11,7 @@ class Donor(Model):
     class Meta:
         database = db
 
+
 class Donation(Model):
     value = IntegerField()
     donor = ForeignKeyField(Donor, backref='donations')
@@ -18,3 +19,8 @@ class Donation(Model):
     class Meta:
         database = db
 
+"""
+these classes create databases that we then work with
+the attributes are paired to integer ID's
+
+"""
