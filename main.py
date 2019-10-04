@@ -34,7 +34,7 @@ def new_d():
         donation_made = Donation(value=donated_value, donor=donor)
         donation_made.save()
 
-        return render_template('new_d.jinja2')
+        return home()
 
     else:
         return home()
